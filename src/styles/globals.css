@@ -2,26 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+/* button css */
+
+.slide {
+    position: relative;
+    overflow: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130%;
+    height: 55px;
+    z-index: 0;
+    background-color: #333333;
+    transform: translate(-110%, 0) skew(-30deg);
+    transition: 0.5s;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.slide:hover::before {
+    transform: translate(-5%, 0) skew(-15deg);
+}
+
+
+.slide2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130%;
+    height: 55px;
+    z-index: 0;
+    background-color: #ffb400;
+    transform: translate(-110%, 0) skew(-30deg);
+    transition: 0.5s;
+}
+
+.slide2:hover::before {
+    transform: translate(-5%, 0) skew(-15deg);
 }

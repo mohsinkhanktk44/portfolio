@@ -4,6 +4,7 @@ type props = {
   description: string;
   img: string;
 };
+// this is just an for mergining purpose
 const ZinCard = (props: props) => {
   const { title, description, img } = props;
   return (

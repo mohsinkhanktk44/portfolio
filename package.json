@@ -25,6 +25,7 @@
     "react-typed": "^2.0.12",
     "redux": "^4.2.1",
     "slick-carousel": "^1.8.1",
+    "swiper": "^11.0.5",
     "tailwindcss": "3.3.3",
     "typescript": "5.1.6"
   },

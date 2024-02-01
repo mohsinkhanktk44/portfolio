@@ -63,9 +63,9 @@ const index = () => {
     <div className=" flex flex-col justify-center items-start w-full">
       <Header />
 
-      {/* <div className="">
+      <div className="flex justify-center items-center w-full">
         <SliderCustom />
-      </div> */}
+      </div>
 
       <div className="flex flex-col justify-center items-center mt-8">
         <div className="flex justify-center flex-col items-start w-[90%]">

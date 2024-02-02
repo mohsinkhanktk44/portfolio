@@ -66,7 +66,8 @@ const index = () => {
       <div className=" flex justify-center items-center w-full">
         <SliderCustom />
       </div>
-      {/* 
+     
+
       <div className="flex flex-col justify-center items-center mt-8">
         <div className="flex justify-center flex-col items-start w-[90%]">
           <p className="text-2xl font-bold">Your Bookmarks</p>
@@ -122,7 +123,7 @@ const index = () => {
             })}
           </div>
         </div>
-      </div> */}
+      </div> 
       <div className="flex justify-center items-center bg-[#f1f3f4] pb-3 mt-12 w-full">
         <div className="flex justify-start w-[95%]">
           <Footer />

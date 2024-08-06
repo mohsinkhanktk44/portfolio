@@ -64,10 +64,10 @@ import CardOn from "@/components/CardOn";
 
 import Faqs from "@/components/Faqs";
 import FooterOn from "@/components/FooterOn";
-import Header from "@/components/Header";
+// import Header from "@/components/Header";
 import OnFaqCard from "@/components/OnFaqCard";
 import OnNavbar from "@/components/OnNavbar";
-import OnserviceCard from "@/components/OnserviceCard";
+// import OnserviceCard from "@/components/OnserviceCard";
 import SliderCustom from "@/components/Slidercustom";
 import { title } from "process";
 import React, { useState } from "react";

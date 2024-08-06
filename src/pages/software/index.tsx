@@ -2,7 +2,7 @@ import CardOn from "@/components/CardOn";
 
 import Faqs from "@/components/Faqs";
 import FooterOn from "@/components/FooterOn";
-import Header from "@/components/Header";
+// import Header from "@/components/Header";
 import OnFaqCard from "@/components/OnFaqCard";
 import OnNavbar from "@/components/OnNavbar";
 import OnserviceCard from "@/components/OnserviceCard";

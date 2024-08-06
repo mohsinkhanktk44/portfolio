@@ -1,7 +1,7 @@
 import React from "react";
-import { FaInstagram } from "react-icons/Fa6";
-import { FaFacebook } from "react-icons/Fa";
-import { FaTwitter } from "react-icons/Fa";
+import { FaInstagram } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 
 function FooterOn() {
   return (

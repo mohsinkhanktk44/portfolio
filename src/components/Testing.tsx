@@ -1,20 +1,20 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
-type Props={
-  testing:string;
-  storeData:number|undefined;
-}
+// type Props={
+//   testing:string;
+//   storeData:number|undefined;
+// }
 
-function Testing(props:Props) {
-  const {testing,storeData} = props
+// function Testing(props:Props) {
+//   const {testing,storeData} = props
 
-  return (
-    <>
-    <div>{testing}</div>
-    <div>{storeData}</div>
-    </>
-    
-  )
-}
+//   return (
+//     <>
+//     <div>{testing}</div>
+//     <div>{storeData}</div>
+//     </>
 
-export default Testing
+//   )
+// }
+
+// export default Testing

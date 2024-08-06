@@ -5,22 +5,43 @@ import React, { useState } from "react";
 function Index() {
   const data = [
     {
-      text: "First Image",
+      projectName: "First Project",
+      technologies: "HTML,CSS,Next,tailwind",
+      description: "This is decsriton",
       image: "https://picsum.photos/200/300",
-      label: "This is decsriton",
     },
     {
-      text: "Second Image",
-      image: "https://picsum.photos/200/300",
-      label: "This is decsriton seond",
+      projectName: "second Project",
+      technologies: "HTML,CSS,Next,tailwind",
+      description: "This is decsriton seond",
+      image: "https://picsum.photos/800/300",
+    },
+    {
+      projectName: "second Project",
+      technologies: "HTML,CSS,Next,tailwind",
+      description: "This is decsriton seond",
+      image: "https://picsum.photos/800/300",
+    },
+    {
+      projectName: "second Project",
+      technologies: "HTML,CSS,Next,tailwind",
+      description: "This is decsriton seond",
+      image: "https://picsum.photos/800/300",
+    },
+    {
+      projectName: "second Project",
+      technologies: "HTML,CSS,Next,tailwind",
+      description: "This is decsriton seond",
+      image: "https://picsum.photos/800/300",
     },
   ];
 
   const [showModal, setShowModal] = useState(false);
   const [selectedItem, setSelectedItem] = useState<{
-    text: string;
+    projectName: string;
+    technologies: string;
+    description: string;
     image: string;
-    label: string;
   } | null>(null);
 
   const newModal = (index: number) => {
@@ -50,20 +71,17 @@ function Index() {
           </p>
           <p className="w-6 bg-[#ffb400] h-[2px]"></p>
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center gap-4 flex-wrap">
           {data.map((item, index) => (
-            <div
-              key={index}
-              className="flex justify-center flex-wrap items-center"
-            >
+            <div key={index} className="flex justify-center items-center">
               <div
-                className="flex justify-center"
+                className="flex justify-center rounded-md"
                 onClick={() => newModal(index)}
               >
                 <Card
-                  text={item.text}
+                  text={item?.projectName}
                   url={"https://www.npmjs.com/package/react-typed"}
-                  img={item.image}
+                  img={item?.image}
                 />
               </div>
             </div>
@@ -77,11 +95,21 @@ function Index() {
           <div className="bg-white p-4 rounded-lg">
             <img
               src={selectedItem?.image}
-              alt={selectedItem?.text}
+              alt={selectedItem?.projectName}
               className="max-w-full mb-4"
             />
-            <p>{selectedItem?.text}</p>
-            <p>{selectedItem?.label}</p>
+            <div className="flex gap-2">
+              <p className="text-Black font-medium">Project Name :</p>
+              <p>{selectedItem?.projectName}</p>
+            </div>
+            <div className="flex gap-2">
+              <p className="text-Black font-medium">Description :</p>
+              <p>{selectedItem?.description}</p>
+            </div>
+            <div className="flex gap-2">
+              <p className="text-Black font-medium">Technologies :</p>
+              <p>{selectedItem?.technologies}</p>
+            </div>
             <button
               className="mt-4 p-2 bg-[#ffb400] text-white rounded"
               onClick={closeModal}

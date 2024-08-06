@@ -1,67 +1,5 @@
-// import AboutImage from "@/components/AboutImage";
-// import Button from "@/components/Button";
-// import Sidebar from "@/components/Sidebar";
-// import router from "next/router";
-// import React from "react";
-// import { ReactTyped } from "react-typed";
-
-// function index() {
-//   const aboutPage = () => {
-//     router.push("/about");
-//   };
-//   return (
-//     <div className="flex relative justify-center items-center w-full lg:h-[100vh] bg-[#222222]">
-//       <div className="absolute top-0 left-1 md:left-3 lg:top-0 lg:left-5">
-//         <Sidebar />
-//       </div>
-//       <div className="flex flex-col lg:flex-row justify-between items-center w-[11/12]">
-//         <div className="flex justify-center items-end w-full lg:w-[50%] mt-4 lg:mt-24">
-//           <img src="/myBgImage.png" alt="myImage" />
-//         </div>
-//         <div className="flex justify-end flex-col items-center lg:mt-0 mt-5 w-full lg:w-[50%]">
-//           <div className="flex justify-center flex-col items-center lg:items-start w-[75%] gap-3">
-//             <p className=" text-sm lg:text-base text-white">HI THERE!</p>
-//             <p className="text-lg lg:text-5xl text-white font-bold ">
-//               I'M{" "}
-//               <span className="text-[#ffb400]">
-//                 <ReactTyped
-//                   strings={["Mohsin Ali", "Web Developer"]}
-//                   typeSpeed={80}
-//                   backSpeed={80}
-//                   loop
-//                 />
-//               </span>
-//             </p>
-//             <p className=" text-sm lg:text-base text-justify text-white">
-//               I'm a Freelance UI/UX Designer and Developer based in London,
-//               England. I strives to build immersive and beautiful web
-//               applications through carefully crafted code and user-centric
-//               design.
-//             </p>
-//           </div>
-//           <div className="flex lg:flex-row pb-2 flex-col justify-start gap-2 items-center w-[75%] mt-5 ">
-//             <Button
-//               varient={"about"}
-//               className={" w-52 h-46 lg:w-52 lg:h-[46px]"}
-//               text={"More About me"}
-//               onClick={aboutPage}
-//             />
-//             <Button
-//               varient={"portfolio"}
-//               className={"w-52 h-46 lg:w-44 lg:h-[46px]"}
-//               text={"Portfolio"}
-//             />
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default index;
-
 import CardOn from "@/components/CardOn";
-import CustomSlider from "@/components/CustomSlider";
+import CustomSlider from "@/components/customSlider";
 import Faqs from "@/components/Faqs";
 import FooterOn from "@/components/FooterOn";
 import Header from "@/components/Header";
@@ -267,7 +205,7 @@ const software = () => {
         </div>
 
         {/* This is review section  */}
-        <div className="flex flex-col md:flex-row gap-3 justify-center items-center w-[80%] mt-8">
+        <div className="flex flex-col md:flex gap-3 justify-center items-center w-[80%] mt-8">
           <OnFaqCard
             title="Highly recommend Talk Home as a PAYG Sim. They have some great and  cheap options available to top-up that suit every budget but nopressure to top-up if your not able too! Which happens to us all attimes! So it's a great relief to know your mobile phone won't berestricted or cut off like with some other networks!"
             img={"/onsoftware/faq1.png"}

@@ -6,6 +6,7 @@ import { BsCalendar2DateFill } from "react-icons/Bs";
 import Skills from "@/components/Skills";
 import BarComponent from "@/components/Skills";
 import Sidebar from "@/components/Sidebar";
+import Button from "@/components/Button";
 
 function index() {
   const experienceData = [
@@ -166,38 +167,47 @@ function index() {
               alt="ProfilePicture"
             />
           </div>
-          <div className="flex justify-between w-1/2">
-            <div className="flex justify-between flex-col items-start w-full">
-              {Person1.map((item, index) => {
-                return (
-                  <div className="flex justify-center gap-4 items-center w-2/3">
-                    <div className="w-full flex justify-start">
-                      <p className="text-[#b5b5b5] text-sm font-bold">
-                        {item.label}
-                      </p>
+          <div className="flex justify-between flex-col w-1/2">
+            <div className="flex justify-between 1/2">
+              <div className="flex justify-between flex-col items-start w-full">
+                {Person1.map((item, index) => {
+                  return (
+                    <div className="flex justify-center gap-4 items-center w-2/3">
+                      <div className="w-full flex justify-start">
+                        <p className="text-[#b5b5b5] text-sm font-bold">
+                          {item.label}
+                        </p>
+                      </div>
+                      <div className="w-full flex justify-start">
+                        <p className="text-white text-sm">{item.title}</p>
+                      </div>
                     </div>
-                    <div className="w-full flex justify-start">
-                      <p className="text-white text-sm">{item.title}</p>
+                  );
+                })}
+              </div>
+              <div className="flex justify-between flex-col items-end gap-8 w-full">
+                {person2.map((item, index) => {
+                  return (
+                    <div className="flex justify-start items-center w-full">
+                      <div className="w-full flex justify-start">
+                        <p className="text-[#b5b5b5] text-sm font-bold">
+                          {item.label}
+                        </p>
+                      </div>
+                      <div className="w-full flex justify-start">
+                        <p className="text-white text-sm">{item.title}</p>
+                      </div>
                     </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
             </div>
-            <div className="flex justify-between flex-col items-end gap-8 w-full">
-              {person2.map((item, index) => {
-                return (
-                  <div className="flex justify-start items-center w-full">
-                    <div className="w-full flex justify-start">
-                      <p className="text-[#b5b5b5] text-sm font-bold">
-                        {item.label}
-                      </p>
-                    </div>
-                    <div className="w-full flex justify-start">
-                      <p className="text-white text-sm">{item.title}</p>
-                    </div>
-                  </div>
-                );
-              })}
+            <div className="flex justify-start items-center mt-8">
+              <Button
+                varient="downloadcv"
+                className="w-56 h-10 text-white"
+                text="DOWNLOAD MY CV"
+              />
             </div>
           </div>
         </div>
@@ -212,8 +222,8 @@ function index() {
         </div>
       </div>
       <div className="flex w-full flex-col justify-center items-center mt-16 pb-7">
-        <div className="flex justify-start flex-col items-start w-11/12">
-          <p className="text-2xl text-white ">Skills</p>
+        <div className="flex justify-start flex-col items-start w-[85%]">
+          <p className="text-white text-2xl font-semibold">Skills</p>
         </div>
         <div className="flex w-[90%] mt-5">
           <div className="flex flex-wrap w-full justify-center gap-5">

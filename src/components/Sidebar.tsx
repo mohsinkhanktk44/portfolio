@@ -34,9 +34,18 @@ const Header = () => {
   const handleShowIcons = () => {
     setShowIcons(!showIcons);
   };
+
   const handleRouting = (page: string) => {
-    router.push(`/${page}`);
+    if (page === "Home") {
+      router.push("/");
+    } else {
+      router.push(`/${page}`);
+    }
   };
+
+  // const handleRouting = (page: string) => {
+  //   router.push(`/${page}`);
+  // };
 
   return (
     <div className="w-full flex justify-center items-center">
@@ -57,7 +66,7 @@ const Header = () => {
           className={`${
             !showIcons
               ? "hidden"
-              : "flex flex-col justify-between py-6 items-center h-48"
+              : "flex flex-col justify-between py-6 items-center h-48 z-[9999]"
           }`}
         >
           {menu.map((item, index) => (
@@ -79,14 +88,14 @@ const Header = () => {
         className={`${
           !showIcons
             ? "hidden fixed"
-            : "bg-transparent flex flex-col px-4 justify-between h-44 mt-20 py-3 absolute left-20 right-0"
+            : "bg-transparent flex flex-col px-4 justify-between h-44 mt-[75px] lg:mt-20 py-3.5 lg:py-3 absolute  left-7  md:left-8 lg:left-11 right-0 z-30"
         }`}
       >
         {menu.map((item, index) => (
           <p
             onClick={() => handleRouting(item.text)}
             key={index}
-            className={`flex justify-center items-center text-base text-center ${
+            className={`flex justify-start items-center text-sm lg:text-base text-center ${
               hoveredItem === index ? "text-yellow-500" : "text-gray-300"
             } cursor-pointer`}
             onMouseEnter={() => setHoveredItem(index)}

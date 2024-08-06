@@ -49,3 +49,4 @@
 .slide2:hover::before {
     transform: translate(-5%, 0) skew(-15deg);
 }
+

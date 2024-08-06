@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown } from "react-icons/Fa";
 import { IconContext } from "react-icons";
 import { RiDownload2Line } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";

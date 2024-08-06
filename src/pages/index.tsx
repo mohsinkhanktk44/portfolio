@@ -61,7 +61,7 @@
 // export default index;
 
 import CardOn from "@/components/CardOn";
-import CustomSlider from "@/components/CustomSlider";
+
 import Faqs from "@/components/Faqs";
 import FooterOn from "@/components/FooterOn";
 import Header from "@/components/Header";
